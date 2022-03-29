@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" </head>
+
+<body>
+    <!-- Part 1: The alerter
+    Let's start out simple, in your index.html file, create a form that contains a text input and a submit button. From here, use Javascript to make it so that when the submit button is clicked, the page displays the text inside of the text input as a browser alert.  -->
+    <form id="form-one">
+        <div>
+            <h2>The Alerter</h2>
+        </div>
+        <div>
+            <label>Type some stuff:</label>
+            <input id="userInput" type="text" autocomplete="off" placeholder="your text here" />
+        </div>
+
+        <div>
+            <input id="submitOne" type="submit" />
+
+        </div>
+    </form>
+    <!-- Part 2: Sandwich builder
+    Somewhere below your previous form, create a new form. The purpose of this form will be to allow the user to select ingredients that will go in a sandwich. Inside of your form, create at least ten checkbox inputs that correspond to various sandwich ingredients (wheat bread, lettuce, peppers, etc.). Additionally, create a submit button.
+    
+    Finally, wire up your form using Javascript so that upon clicking the submit button, a browser alert is displayed with a string with all of the ingredients that the user selected by checking the inputs (i.e.: "Your sandwich contains: bread, pesto, tomato, mozzerella, spinach"). To do this, you'll need to build a string, querying each checkbox one at a time. You could use a for-loop to do this but you are not required to do so. -->
+    <form id="two">
+        <div>
+
+            <h2>Sandwich Builder</h2>
+        </div>
+        <div>
+            <h3>Type of Bread</h3>
+            <div>
+                <label>White</label>
+                <input id="white" type="radio" name="bread" checked>
+            </div>
+            <div>
+                <label>Wheat</label>
+                <input id="wheat" type="radio" name="bread">
+            </div>
+            <div>
+                <label>Sourdough</label>
+                <input id="sourdough" type="radio" name="bread">
+            </div>
+            <div>
+                <label>Gluten-Free</label>
+                <input id="gluten-free" type="radio" name="bread">
+            </div>
+
+            <div>
+                <h3>Toppings:</h3>
+                <div>
+                    <label>Turkey</label>
+                    <input id="turkey" type="checkbox">
+                </div>
+                <div>
+                    <label>Ham</label>
+                    <input id="ham" type="checkbox">
+                </div>
+                <div>
+                    <label>Roast Beef</label>
+                    <input id="roast-beef" type="checkbox">
+                </div>
+                <div>
+                    <label>Cheddar</label>
+                    <input id="cheddar" type="checkbox">
+                </div>
+                <div>
+                    <label>Swiss</label>
+                    <input id="swiss" type="checkbox">
+                </div>
+                <div>
+                    <label>Muenster</label>
+                    <input id="muenster" type="checkbox">
+                </div>
+                <div>
+                    <label>Mayonnaise</label>
+                    <input id="mayo" type="checkbox">
+                </div>
+                <div>
+                    <label>Mustard</label>
+                    <input id="mustard" type="checkbox">
+                </div>
+                <div>
+                    <label>Lettuce</label>
+                    <input id="lettuce" type="checkbox">
+                </div>
+                <div>
+                    <label>Sprouts</label>
+                    <input id="sprouts" type="checkbox">
+                </div>
+                <div>
+                    <label>Tomato</label>
+                    <input id="tomato" type="checkbox">
+                </div>
+                <div>
+                    <label>Peppers</label>
+                    <input id="peppers" type="checkbox">
+                </div>
+                <div>
+                    <label>Oil & Vinegar</label>
+                    <input id="oil-vinegar" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div>
+            <input id="submitTwo" type="submit" />
+        </div>
+    </form>
+
+    <!-- Part 3: Haircut appointment scheduler
+Below your previous form, create another new form. This form will represent a haircut scheduling form which should contain the following inputs:
+
+a date input for what day the haircut should be scheduled for
+a text input to allow the user to request a specific hair cutter
+one set of two radio inputs that allows the user to select whether they have long or short hair
+a submit button
+Additionally, make sure to add proper labels for each input.
+
+When the user submits the form, display an alert with a message with the following structure: "Haircut scheduled for [DATE] with [HAIRCUTTER] for [LONG/SHORT] hair." -->
+
+
+    <form id="three">
+        <div>
+            <h2>Haircut Appointment Scheduler</h2>
+        </div>
+
+        <div>
+            <label>What date would you like to schedule your haircut for?</label>
+            <input id="date" type="date">
+        </div>
+
+        <div>
+            <label>Which stylist would you like to schedule with?</label>
+            <input id="stylist-choice" type="text" autocomplete="off" placeholder="enter stylist's name" />
+        </div>
+
+        <div>
+            <label>Long Hair</label>
+            <input id="long" type="radio" name="length" checked>
+        </div>
+        <div>
+            <label>Short Hair</label>
+            <input id="short" type="radio" name="length">
+        </div>
+
+        <div>
+            <input id="submitThree" type="submit" />
+        </div>
+    </form>
+
+    <!-- Part 4: Create account
+    Finally, create one more form that represents a "create account" form. This form should have the following inputs:
+    
+    a text input for the user's desired username
+    an email input for the user's email
+    a password input for the user's password
+    a confirm password input that makes the user type their password a second time to confirm it
+    a submit button
+    Once again, make sure to add proper labels for your inputs.
+    
+    When the user submits the form, display an alert with the created user's username and email. As a habit of good security, don't display the user's password. -->
+<form>
+<div>
+    <h2>Create Account</h2>
+</div>
+
+<div>
+    <label>Please enter your desired username:</label>
+    <input id="username" type="text" autocomplete="off">
+</div>
+
+
+<div>
+    <label>Please enter your email address:</label>
+    <input id="email" type="email" autocomplete="off" placeholder="enter valid email">
+</div>
+
+<div>
+    <label>Please enter a password:</label>
+    <input id= "passOne" type="password">
+</div>
+
+<div>
+    <label>Please re-enter your password:</label>
+    <input id= "passTwo" type="password">
+</div>
+
+<div>
+    <input id="submitFour" type="submit" />
+</div>
+
+
+
+</form>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
